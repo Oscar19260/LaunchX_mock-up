@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchX HTML2</title>
+    <script type="text/javascript">
+        function recibir(){
+            var sabor = document.getElementId("sabor").value();
+            var topping1 = document.getElementId("topping1").value();
+            var topping2 = document.getElementId("topping2").value();
+            var topping3 = document.getElementId("topping3").value();
+            var topping4 = document.getElementId("topping4").value();
+            var topping5 = document.getElementId("topping5").value();
+            var topping6 = document.getElementId("topping6").value();            
+            [0].value;
+            var coment = document.getElementById("comentarios").value();
+
+            if(sabor == "Plano"){
+                var sabor1 = document.getElementId("sabor91").value();
+                var sabor2 = document.getElementId("sabor92").value();
+                var sabor3 = document.getElementId("sabor93").value();
+                var sabor4 = document.getElementId("sabor94").value();
+
+                document.mensaje.value =" \ Sabor de Pastel: "
+                + sabor1 + sabor2 + sabor3 + sabor4 +
+                "\ <br>Toppings: " + topping1 + topping2 + topping3 + topping4
+                + topping5 + topping6 + "\ <br>Comentarios: " + coment;
+            }
+            else{
+                document.mensaje.value =" \ Sabor de Pastel: "
+                + sabor + "\ <br>Toppings: " + topping1 + topping2 + topping3 + topping4
+                + topping5 + topping6 + "\ <br>Comentarios: " + coment;
+            }
+        }
+    </script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            color:azure;
+        }
+
+        .title{
+            text-align: center;
+            color: plum;
+        }
+        .subtitle{
+            color: pink;
+        }
+        .especial{
+            color: peachpuff;
+        }
+
+        img{
+            align-items: center;
+            height: 200px;
+            /* width: 250px; */
+        }
+
+        body{
+            background-image: url("./img/FondoEspacio2.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            /* background-color: black; */
+        }
+
+        .send{
+            background-color: black;
+            text-align: center;
+            width: 33%;
+            transform: translate(100%, 0%);
+        }
+
+        .coment{
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            color: black;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Space Cake </h1>
+    <h2 class="title">Con un sabor de otro mundo.</h2>
+    <div align="center"><img src="./img/Logo_SpaceCake.png" alt="Logo Space Cake"></div>
+    <br>
+    <hr>
+
+    <br>
+    <h1 class="title">Pedido: </h1>
+    <!-- ........................................................................... -->
+    <h2 class="subtitle">Sabor de Pastel</h2>
+    <form action="pedido.html" target="_blank">
+    <blockquote>
+        <input type="radio" id="sabor" name="sabor" value="Mercurio">
+        <label for="sabor1">Paste Mercurio</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Venus">
+        <label for="sabor2">Paste Venus</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Tierra">
+        <label for="sabor3">Pastel Tierra</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Marte">
+        <label for="sabor4">Pastel Marte</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Marte">
+        <label for="sabor5">Pastel Júpiter</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Saturno">
+        <label for="sabor6">Pastel Saturno</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Urano">
+        <label for="sabor7">Pastel Urano</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Neptuno">
+        <label for="sabor8">Pastel Neptuno</label><br><br>
+
+        <input type="radio" id="sabor" name="sabor" value="Plano">
+        <label for="sabor9">Pastel Plano</label><br><br>
+    </blockquote>
+    <p class="especial">En caso de que su selcción sea "Pastel Plano", elige el o los sabores que quieres que 
+    tenga el pastel (si en más de uno se agregaran +50), se pueden agregar un máximo de 3 sabores.</p>
+    <blockquote>
+        <input type="checkbox" id="sabor91" name="sabor9" value="Chocolate">
+        <label for="sabor91">Chocolate</label>
+
+        <input type="checkbox" id="sabor92" name="sabor9" value="Fresa">
+        <label for="sabor92">Fresa</label>
+
+        <input type="checkbox" id="sabor93" name="sabor9" value="Vainilla">
+        <label for="sabor93">Vainilla</label>
+
+        <input type="checkbox" id="sabor94" name="sabor9" value="Red velvet">
+        <label for="sabor94">Red velvet</label>
+    </blockquote>
+
+    <!-- ........................................................................... -->
+    <br>
+    <h2 class="subtitle">Toppings</h2>
+    <blockquote>
+        <input type="checkbox" id="topping1" name="topping1" value="Aurora Polar">
+        <label for="topping1">Aurora Polar</label><br><br>
+
+        <input type="checkbox" id="topping2" name="topping2" value="Masa Cósmica">
+        <label for="topping2">Masa Cósmica</label><br><br>
+
+        <input type="checkbox" id="topping3" name="topping3" value="Chispas Galácticas">
+        <label for="topping3">Chispas Galácticas</label><br><br>
+
+        <input type="checkbox" id="topping4" name="topping4" value="Meteoritos">
+        <label for="topping4">Meteoritos</label><br><br>
+        <input type="checkbox" id="topping5" name="topping5" value="Materia Oscura">
+        <label for="topping5">Materia Oscura</label><br><br>
+
+        <input type="checkbox" id="topping6" name="topping6" value="Nebulosa">
+        <label for="topping6">Nebulosa</label><br><br>
+    </blockquote>
+
+    <!-- ........................................................................... -->
+    <br>
+    <h2 class="subtitle">Comentarios</h2>
+    <p class="especial">En esta sección, escriba los comentario sobre el pastel en específico
+    (toppings especificos que quiera).</p>
+    <input type="text" id="comentarios" name="comentario" class="coment">
+    <!--<textarea id="comment" class="form-control"></textarea></label>-->
+    <br><br>
+    <input class="send" type="reset"><br>
+    <input class="send" type="button" name="bt1" value="Enviar" onclick="recibir()">
+    <br>
+    </form>
+    <br>
+    <hr>
+    <!-- ........................................................................... -->
+</body>
+</html>
