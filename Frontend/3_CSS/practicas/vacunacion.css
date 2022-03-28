@@ -1,0 +1,100 @@
+*{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-image: url("./img/fondo.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+  
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+button{
+    color: white;
+    background: royalblue;
+    text-shadow: 1px 1px 15px #666666;
+    margin-top: 0.7cm;
+    margin-right: 2cm;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+}
+
+table{
+    background: transparent;
+    size: fixed;
+    width: 100%;
+}
+
+footer{
+    /* position:fixed; */
+    width:100%;
+    background: #aac0e3;
+}
+
+/* ------------------------------------------------------------------- */
+
+.barTitle{
+    color: royalblue;
+    float: left;
+    font-weight: bolder;
+    margin-top: 0.8cm;
+    margin-left: 2cm;
+}
+
+.barTitles{
+    color: gray;
+    float: right;
+    margin-left: 0.4cm;
+    background: transparent;
+}
+
+.b{
+    float: right;
+    size: 5cm;
+}
+
+.titulo{
+    color: darkblue;
+    font-weight: bolder;
+    margin-left: 2cm;
+}
+
+.texto{
+    color: gray;
+    line-height : 5px;
+    margin-left: 2cm;
+    background-color: transparent;
+}
+
+.der{
+    text-align: right;
+}
+
+.tabla {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.prim {width: 50%;} 
+.seg {width: 50%;}
+
+.desc{
+    color: gray;
+    float: left;
+    margin-top: 0.4cm;
+    margin-left: 2cm;
+    background: transparent;
+}

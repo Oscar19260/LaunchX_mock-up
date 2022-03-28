@@ -1,0 +1,54 @@
+form{
+    width: fit-content;
+    margin: auto;
+}
+
+input{
+    align-content: center;
+}
+
+.pokeCard{
+    background-color: rgb(213, 108, 108);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.circle{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: 50%;
+}
+
+.pokeImg{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.pokeTypes{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: 50%;
+}
+
+.pokeStats{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    width: 50%;
+}
